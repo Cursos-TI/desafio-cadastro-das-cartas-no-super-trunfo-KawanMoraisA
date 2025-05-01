@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+    // variaveis da primeira carta
     char estado;
     int codigo;
     char nome[20];
@@ -9,7 +10,7 @@ int main(){
     float pib;
     int numeroPontoTuristico;
 
-
+    // variaveis da segunda carta
     char estado2;
     int codigo2;
     char nome2[20];
@@ -18,7 +19,7 @@ int main(){
     float pib2;
     int numeroPontoTuristico2;
 
-
+    // pega os dados da carta 1 e registra nas variaveis
     printf("Cadastrar carta 1:\n");
     printf("Escolha uma letra para representar o estado(de A a H): ");
     scanf(" %c", &estado);
@@ -41,9 +42,11 @@ int main(){
     printf("\nQuantos pontos turisticos ela tem?:");
     scanf("%d", &numeroPontoTuristico);
 
+    // mostra os dados registrados pra carta 1
     printf("\n Carta 01 tem os seguintes dados: \n");
     printf(" estado: %c \n codigo: %c%d \n nome: %s \n populaçao: %d \n area: %f \n pib: %f \n quantidade de pontos turisticos: %d \n", estado, estado, codigo, nome, populacao, area, pib, numeroPontoTuristico);
 
+    // pega os dados da carta 2 e registra nas variaveis
     printf("Cadastrar carta 2:\n");
     printf("Escolha uma letra para representar o estado(de A a H): ");
     scanf(" %c", &estado2);
@@ -66,10 +69,11 @@ int main(){
     printf("\nQuantos pontos turisticos ela tem?:");
     scanf("%d", &numeroPontoTuristico2);
     
+    // mostra os dados da carta 2
     printf("\n Carta 02 tem os seguintes dados: \n");
     printf(" estado: %c \n codigo: %c%d \n nome: %s \n populaçao: %d \n area: %f \n pib: %f \n quantidade de pontos turisticos: %d \n", estado2, estado2, codigo2, nome2, populacao2, area2, pib2, numeroPontoTuristico2);
 
-
+    // mostra as cartas criadas
     printf("\n\n\n\nCartas criadas: \n");
     printf("\n Carta 01: \n");
     printf(" estado: %c \n codigo: %c%d \n nome: %s \n populaçao: %d \n area: %f \n pib: %f \n quantidade de pontos turisticos: %d \n", estado, estado, codigo, nome, populacao, area, pib, numeroPontoTuristico);
