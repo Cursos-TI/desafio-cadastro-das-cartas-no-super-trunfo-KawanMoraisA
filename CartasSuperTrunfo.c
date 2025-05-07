@@ -41,7 +41,7 @@ int main(){
 
     printf("\nQual o pib da cidade?(em bilhões):");
     scanf("%f", &pib);
-    pib *= 1000000000;
+    pib *= 1000000000; // percebi que nos exemplos os pibs são em bilhoes, então adicionei isso pra converter automaticamente
     
     printf("\nQuantos pontos turisticos ela tem?:");
     scanf("%d", &numeroPontoTuristico);
